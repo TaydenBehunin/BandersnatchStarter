@@ -24,7 +24,9 @@ def chart(df: DataFrame, x: str, y: str, target: str) -> Chart:
         gridColor="#343333",
         domainOpacity=0.2,
         domainColor="light gray",
-        labelColor="white"
+        labelColor="white",
+        titleColor="white",
+        titlePadding=20
     ).configure_legend(
         labelColor="white",
         titleColor="white",
