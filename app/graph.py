@@ -16,7 +16,7 @@ def chart(df: DataFrame, x: str, y: str, target: str) -> Chart:
         height=500,
     ).configure(
         background="#1d1c1c",
-        padding={"left":15, "top":30, "right":15, "bottom":15}
+        padding={"left": 15, "top": 30, "right": 15, "bottom": 15}
     ).configure_title(
         fontSize=30,
         color="#9f9f9f"
@@ -27,7 +27,7 @@ def chart(df: DataFrame, x: str, y: str, target: str) -> Chart:
         labelColor="white"
     ).configure_legend(
         labelColor="white",
-        titleColor='White',
+        titleColor="white",
         titlePadding=20
     ).interactive()
 
