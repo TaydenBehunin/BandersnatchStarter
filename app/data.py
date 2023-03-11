@@ -18,8 +18,8 @@ class Database:
 
     def seed(self, amount=1000):
         """Randomly Generate a list of 1000 monsters and insert them into MongoDB"""
-        df = [Monster().to_dict() for _ in range(amount)]
-        return self.collection.insert_many(df).acknowledged
+        data = [Monster().to_dict() for _ in range(amount)]
+        return self.collection.insert_many(data).acknowledged
 
     def reset(self):
         """Remove all documents from the collection"""
@@ -41,8 +41,8 @@ class Database:
             return self.dataframe().to_html()
 
 
-# if __name__ == '__main__':
-#     test = Database('Database')
-#     test.reset()
-#     test.seed()
-#     print(test.count())
+if __name__ == '__main__':
+    test = Database('Database')
+    test.reset()
+    test.seed()
+    print(test.count())
