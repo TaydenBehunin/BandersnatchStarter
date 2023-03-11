@@ -26,7 +26,9 @@ def chart(df: DataFrame, x: str, y: str, target: str) -> Chart:
         domainColor="light gray",
         labelColor="white"
     ).configure_legend(
-        labelColor="white"
+        labelColor="white",
+        titleColor='White',
+        titlePadding=20
     ).interactive()
 
     return graph
